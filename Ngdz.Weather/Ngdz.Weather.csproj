@@ -1,0 +1,36 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <Version>0.1.0</Version>
+        <!-- Optional: Publish the repository URL in the built .nupkg (in the NuSpec <Repository> element) -->
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+ 
+    <!-- Optional: Embed source files that are not tracked by the source control manager in the PDB -->
+    <EmbedUntrackedSources>true</EmbedUntrackedSources>
+  
+    <!-- Optional: Build symbol package (.snupkg) to distribute the PDB containing Source Link -->
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="NString" Version="2.0.0" />
+  </ItemGroup>
+
+  
+   <ItemGroup>
+  <Compile Update="MetarDisplay/strings.Designer.cs">
+    <DesignTime>True</DesignTime>
+    <AutoGen>True</AutoGen>
+    <DependentUpon>MetarDisplay/strings.resx</DependentUpon>
+  </Compile>
+</ItemGroup>
+
+<ItemGroup>
+  <EmbeddedResource Update="MetarDisplay/strings.resx">
+    <Generator>ResXFileCodeGenerator</Generator>
+    <LastGenOutput>MetarDisplay/strings.Designer.cs</LastGenOutput>
+  </EmbeddedResource>
+</ItemGroup>
+</Project>
