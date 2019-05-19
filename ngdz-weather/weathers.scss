@@ -1,0 +1,879 @@
+.echeance {
+  cursor: pointer;
+  line-height: 28px;
+  padding-left: 5px;
+}
+
+.mod-carte-previsions-zap strong {
+  line-height: 28px;
+  margin: 10px;
+}
+
+.mod-carte-previsions-map {
+  position: relative;
+  border: 0 none;
+  padding: 0;
+  background: url(images/PAYS067.jpg) no-repeat;
+  height: 510px;
+  width: 667px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+}
+
+.relever {
+  color: #6d7682;
+}
+
+.tp_min {
+  color: #4d7ba8;
+}
+
+.tp_max {
+  color: #c56561;
+}
+
+.pictoMap {
+  cursor: pointer;
+  position: absolute;
+}
+
+div.pictoMap {
+  border: 0 none;
+  padding: 0;
+}
+
+.temper {
+  left: 0;
+  position: absolute;
+  text-align: center;
+  top: 18px;
+  width: 70px;
+  z-index: 2;
+  font-size: 1.2em;
+}
+
+span.temper {
+  text-shadow: 1px 1px #fff;
+  color: #555;
+}
+
+.winder {
+  left: 0;
+  position: absolute;
+  text-align: center;
+  width: 70px;
+  z-index: 2;
+  font-size: 1.2em;
+}
+
+span.winder {
+  text-shadow: 1px 1px #fff;
+  color: #555;
+}
+
+.picTemps {
+  display: block;
+  width: 70px;
+  height: 56px;
+  background: url(images/spriteCarte40Temps.png) no-repeat;
+  text-indent: -9999px;
+}
+
+.picTemps.legend {
+  display: inline-block;
+}
+
+.ie7 .picTemps.legend {
+  display: block;
+  float: left;
+}
+
+.picTempsCat.legend {
+  text-align: center;
+}
+
+.picVent {
+  display: block;
+  width: 70px;
+  height: 40px;
+  background: url(images/spriteCarte40Vent.png) no-repeat;
+  text-indent: -9999px;
+  margin-top: 10px;
+}
+
+.picVentNeige {
+  display: block;
+  width: 43px;
+  height: 40px;
+  background: url(images/spriteCarte40Vent.png) no-repeat;
+  text-indent: -9999px;
+}
+
+.picVentBRA {
+  display: block;
+  height: 34px;
+  position: relative;
+  background: url(images/spriteCarte40Vent.png) no-repeat;
+  text-indent: -9999px;
+}
+
+.picVentBRAPrev {
+  display: block;
+  position: relative;
+  height: 40px;
+  text-indent: -9999px;
+}
+
+.picTempsFav {
+  margin-top: -1px;
+  width: 70px;
+  height: 60px;
+}
+
+.UV_0 {
+  background-position: 0 -60px;
+}
+
+.UV_1 {
+  background-position: 0 -120px;
+}
+
+.UV_2 {
+  background-position: 0 -180px;
+}
+
+.UV_3 {
+  background-position: 0 -240px;
+}
+
+.UV_4 {
+  background-position: 0 -300px;
+}
+
+.UV_5 {
+  background-position: 0 -360px;
+}
+
+.UV_6 {
+  background-position: 0 -420px;
+}
+
+.UV_7 {
+  background-position: 0 -480px;
+}
+
+.UV_8 {
+  background-position: 0 -540px;
+}
+
+.UV_9 {
+  background-position: 0 -600px;
+}
+
+.UV_10 {
+  background-position: 0 -660px;
+}
+
+.UV_11 {
+  background-position: 0 -720px;
+}
+
+.UV_12 {
+  background-position: 0 -780px;
+}
+
+.UV_13 {
+  background-position: 0 -840px;
+}
+
+.UV_14 {
+  background-position: 0 -900px;
+}
+
+.UV_15 {
+  background-position: 0 -960px;
+}
+
+.UV_16 {
+  background-position: 0 -1020px;
+}
+
+.UV_17 {
+  background-position: 0 -1080px;
+}
+
+.UV_18 {
+  background-position: 0 -1140px;
+}
+
+.UV_19 {
+  background-position: 0 -1200px;
+}
+
+.UV_20 {
+  background-position: 0 -1260px;
+}
+
+.TEMP_0,
+.picTemps-Sunny {
+  background-position: 0 -0px;
+}
+
+.TEMP_1,
+.picTemps-Sunny_N {
+  background-position: 0 -56px;
+}
+
+.TEMP_2,
+.picTemps-Mist {
+  background-position: 0 -112px;
+}
+
+.TEMP_3,
+.picTemps-Mist_N {
+  background-position: 0 -168px;
+}
+
+.TEMP_4,
+.picTemps-SunnyIntervals {
+  background-position: 0 -224px;
+}
+
+.TEMP_5,
+.picTemps-SunnyIntervals_N {
+  background-position: 0 -280px;
+}
+
+.TEMP_6,
+.picTemps-BlackLowCloud {
+  background-position: 0 -336px;
+}
+
+.TEMP_7,
+.picTemps-Mist2 {
+  background-position: 0 -392px;
+}
+
+.TEMP_8,
+.picTemps-Mist2_N {
+  background-position: 0 -448px;
+}
+
+.TEMP_9,
+.picTemps-Mist2 {
+  background-position: 0 -504px;
+}
+
+.TEMP_10,
+.picTemps-Fog {
+  background-position: 0 -560px;
+}
+
+.TEMP_11,
+.picTemps-11 {
+  background-position: 0 -616px;
+}
+
+.TEMP_12,
+.picTemps-CloudyWithLightRain {
+  background-position: 0 -672px;
+}
+
+.TEMP_13,
+.picTemps-13 {
+  background-position: 0 -728px;
+}
+
+.TEMP_14,
+.picTemps-14 {
+  background-position: 0 -784px;
+}
+
+.TEMP_15,
+.picTemps-15 {
+  background-position: 0 -840px;
+}
+
+.TEMP_16,
+.picTemps-LightRainShowers_S {
+  background-position: 0 -896px;
+}
+
+.TEMP_17,
+.picTemps-LightRainShowers_N {
+  background-position: 0 -952px;
+}
+
+.TEMP_18,
+.picTemps-LightRainShowers {
+  background-position: 0 -1008px;
+}
+
+.TEMP_19,
+.picTemps-HeavyRainShowers_S {
+  background-position: 0 -1064px;
+}
+
+.TEMP_20,
+.picTemps-HeavyRainShowers_N {
+  background-position: 0 -1120px;
+}
+
+.TEMP_21,
+.picTemps-HeavyRainShowers {
+  background-position: 0 -1176px;
+}
+
+.TEMP_22,
+.picTemps-CloudyWithHeavyRain {
+  background-position: 0 -1232px;
+}
+
+.TEMP_23,
+.picTemps-RainyThunderstorms_S {
+  background-position: 0 -1288px;
+}
+
+.TEMP_24,
+.picTemps-RainyThunderstorms_N {
+  background-position: 0 -1344px;
+}
+
+.TEMP_25,
+.picTemps-RainyThunderstorms {
+  background-position: 0 -1400px;
+}
+
+.TEMP_26,
+.picTemps-LightSnowShowers_S {
+  background-position: 0 -1456px;
+}
+
+.TEMP_27,
+.picTemps-LightSnowShowers_N {
+  background-position: 0 -1512px;
+}
+
+.TEMP_28,
+.picTemps-LightSnowShowers {
+  background-position: 0 -1568px;
+}
+
+.TEMP_29,
+.picTemps-CloudyWithLightSleet_S {
+  background-position: 0 -1624px;
+}
+
+.TEMP_30,
+.picTemps-CloudyWithLightSleet_N {
+  background-position: 0 -1680px;
+}
+
+.TEMP_31,
+.picTemps-CloudyWithLightSleet {
+  background-position: 0 -1736px;
+}
+
+.TEMP_32,
+.picTemps-HeavySnowShowers_S {
+  background-position: 0 -1792px;
+}
+
+.TEMP_33,
+.picTemps-HeavySnowShowers_N {
+  background-position: 0 -1848px;
+}
+
+.TEMP_34,
+.picTemps-HeavySnowShowers {
+  background-position: 0 -1904px;
+}
+
+.TEMP_35,
+.picTemps-CloudyWithHeavySnow {
+  background-position: 0 -1960px;
+}
+
+.TEMP_36,
+.picTemps-36 {
+  background-position: 0 -2016px;
+}
+
+.TEMP_37,
+.picTemps-37 {
+  background-position: 0 -2072px;
+}
+
+.TEMP_38,
+.picTemps-38 {
+  background-position: 0 -2128px;
+}
+
+.TEMP_39,
+.picTemps-ThunderyShowers_S {
+  background-position: 0 -2184px;
+}
+
+.TEMP_40,
+.picTemps-ThunderyShowers_N {
+  background-position: 0 -2240px;
+}
+
+.TEMP_41,
+.picTemps-ThunderyShowers {
+  background-position: 0 -2296px;
+}
+
+.TEMP_42,
+.picTemps-Thunderstorms_S {
+  background-position: 0 -2352px;
+}
+
+.TEMP_43,
+.picTemps-Thunderstorms_N {
+  background-position: 0 -2408px;
+}
+
+.TEMP_44,
+.picTemps-Thunderstorms {
+  background-position: 0 -2464px;
+}
+
+.V_NC {
+  background-position: center 0;
+}
+
+.V_E {
+  background-position: center -360px;
+}
+
+.V_ENE {
+  background-position: center -480px;
+}
+
+.V_NE {
+  background-position: center -520px;
+}
+
+.V_NNE {
+  background-position: center -600px;
+}
+
+.V_NNO {
+  background-position: center -560px;
+}
+
+.V_ONO {
+  background-position: center -400px;
+}
+
+.V_NO {
+  background-position: center -440px;
+}
+
+.V_N {
+  background-position: center -640px;
+}
+
+.V_O {
+  background-position: center -40px;
+}
+
+.V_ESE {
+  background-position: center -240px;
+}
+
+.V_SE {
+  background-position: center -280px;
+}
+
+.V_OSO {
+  background-position: center -80px;
+}
+
+.V_SO {
+  background-position: center -120px;
+}
+
+.V_SSE {
+  background-position: center -200px;
+}
+
+.V_SSO {
+  background-position: center -160px;
+}
+
+.V_S {
+  background-position: center -320px;
+}
+
+.V_V {
+  background-position: center -680px;
+}
+
+.J_1 {
+  background-position: 0 0px;
+}
+
+.N_1 {
+  background-position: 0 -56px;
+}
+
+.J_2 {
+  background-position: 0 -112px;
+}
+
+.N_2 {
+  background-position: 0 -168px;
+}
+
+.J_3 {
+  background-position: 0 -224px;
+}
+
+.N_3 {
+  background-position: 0 -280px;
+}
+
+.J_4 {
+  background-position: 0 -336px;
+}
+
+.N_4 {
+  background-position: 0 -392px;
+}
+
+.J_5 {
+  background-position: 0 -448px;
+}
+
+.N_5 {
+  background-position: 0 -504px;
+}
+
+.J_6,
+.N_6 {
+  background-position: 0 -560px;
+}
+
+.J_7 {
+  background-position: 0 -616px;
+}
+
+.N_7 {
+  background-position: 0 -672px;
+}
+
+.J_8,
+.N_8 {
+  background-position: 0 -784px;
+}
+
+.J_9,
+.N_9 {
+  background-position: 0 -840px;
+}
+
+.J_10,
+.N_10 {
+  background-position: 0 -896px;
+}
+
+.J_11 {
+  background-position: 0 -952px;
+}
+
+.N_11 {
+  background-position: 0 -1008px;
+}
+
+.J_12,
+.N_12 {
+  background-position: 0 -1120px;
+}
+
+.J_13,
+.N_13 {
+  background-position: 0 -1288px;
+}
+
+.J_14,
+.N_14 {
+  background-position: 0 -1344px;
+}
+
+.J_15,
+.N_15 {
+  background-position: 0 -1400px;
+}
+
+.J_16,
+.N_16 {
+  background-position: 0 -1456px;
+}
+
+.J_17,
+.N_17 {
+  background-position: 0 -1512px;
+}
+
+.J_18 {
+  background-position: 0 -1568px;
+}
+
+.N_18 {
+  background-position: 0 -1624px;
+}
+
+.default_bra {
+  background-position: 0 -1680px;
+}
+
+.mod-carte-previsions-map-details-wrapper {
+  position: fixed;
+  z-index: 100;
+  text-align: center;
+}
+
+.mod-carte-previsions-map-details {
+  width: 200px;
+  margin: 0 0 1em 0;
+  top: 0;
+  font-size: 12px;
+  left: -99999px;
+}
+
+.map-details-details {
+  background: url(images/grad-grey-5.png) repeat-x bottom left #fff;
+  padding: 5px;
+}
+
+.map-details-title {
+  color: #3979a5;
+  font-size: 1.25em;
+  margin: 0;
+}
+
+.map-details-title span {
+  color: #cccccc;
+  font-size: 0.733em;
+  margin-right: 2px;
+}
+
+.map-details-date {
+  margin: 0;
+}
+
+.map-details-picto {
+  float: left;
+  margin-right: 4px;
+}
+
+.map-details-details strong {
+  color: #3979a5;
+  display: block;
+  text-align: center;
+}
+
+.map-details-details .map-details-temp {
+  display: block;
+}
+
+.map-details-data {
+  overflow: hidden;
+  font-size: 0.917em;
+}
+
+.vigilance p {
+  font-size: 1.083em;
+  margin: 0;
+}
+
+.mod-carte-previsions-options {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 175px;
+  z-index: 2;
+  zoom: 1;
+}
+
+.mod-carte-previsions-actions {
+  position: absolute;
+  top: 465px;
+  left: 0px;
+  width: 680px;
+  z-index: 2;
+  zoom: 1;
+}
+
+.mod-carte-previsions-zap {
+  margin-bottom: 10px;
+  background: url(images/mod-carte-previsions-zap.png) repeat-x bottom left
+    #f9f9f9;
+  border: 1px solid #b7c6cd;
+}
+
+.mod-carte-previsions-dates,
+.mod-carte-previsions-vents {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.mod-carte-previsions-dates ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.mod-carte-previsions-dates ul span,
+.mod-carte-previsions-dates ul a:link,
+.mod-carte-previsions-dates ul a:visited {
+  font-weight: normal;
+  background: none;
+  padding: 3px 10px 3px 10px;
+}
+
+.mod-carte-previsions-dates ul > span.active,
+.mod-carte-previsions-dates ul > span:hover,
+.mod-carte-previsions-dates ul > li.active,
+.mod-carte-previsions-dates ul > li:hover {
+  background: url(images/mod-carte-previsions-dates-active.png) no-repeat bottom
+    left #3979a5;
+  -webkit-box-shadow: 0px 0px 13px #367199 inset;
+  -moz-box-shadow: 0px 0px 13px #367199 inset;
+  box-shadow: 0px 0px 13px #367199 inset;
+}
+
+.mod-carte-previsions-dates ul .active span,
+.mod-carte-previsions-dates ul .active a:link,
+.mod-carte-previsions-dates ul .active a:visited,
+.mod-carte-previsions-dates ul > li:hover span,
+.mod-carte-previsions-dates ul > li:hover a:link,
+.mod-carte-previsions-dates ul > li:hover a:visited {
+  color: #fff;
+  text-decoration: none;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+.map-loading {
+  position: absolute;
+  background-color: rgba(128, 128, 128, 0.42);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 4;
+}
+
+.margin-left05 {
+  margin-left: 05px;
+}
+
+.margin-left10 {
+  margin-left: 10px;
+}
+
+.margin-left15 {
+  margin-left: 15px;
+}
+
+.margin-left20 {
+  margin-left: 20px;
+}
+
+.margin-left25 {
+  margin-left: 25px;
+}
+
+.margin-left30 {
+  margin-left: 30px;
+}
+
+.margin-left35 {
+  margin-left: 35px;
+}
+
+.margin-left40 {
+  margin-left: 40px;
+}
+
+.margin-left45 {
+  margin-left: 45px;
+}
+
+.margin-top05 {
+  margin-top: 05px;
+}
+
+.margin-top10 {
+  margin-top: 10px;
+}
+
+.margin-top15 {
+  margin-top: 15px;
+}
+
+.margin-top20 {
+  margin-top: 20px;
+}
+
+.margin-top25 {
+  margin-top: 25px;
+}
+
+.margin-top30 {
+  margin-top: 30px;
+}
+
+.margin-top35 {
+  margin-top: 35px;
+}
+
+.margin-top40 {
+  margin-top: 40px;
+}
+
+.margin-top45 {
+  margin-top: 45px;
+}
+
+.margin-right05 {
+  margin-right: 05px;
+}
+
+.margin-right10 {
+  margin-right: 10px;
+}
+
+.margin-right15 {
+  margin-right: 15px;
+}
+
+.margin-right20 {
+  margin-right: 20px;
+}
+
+.margin-right25 {
+  margin-right: 25px;
+}
+
+.margin-right30 {
+  margin-right: 30px;
+}
+
+.margin-right35 {
+  margin-right: 35px;
+}
+
+.margin-right40 {
+  margin-right: 40px;
+}
+
+.margin-right45 {
+  margin-right: 45px;
+}
